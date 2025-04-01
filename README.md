@@ -27,7 +27,7 @@ A comprehensive data visualization and analysis system for studying glacier dist
 
 1. Clone this repository:
 ```bash
-git clone [repository-url]
+git clone [https://github.com/Purneshguptha/Glacier_Detection_System.git]
 cd glacier-analysis-system
 ```
 
