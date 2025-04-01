@@ -76,6 +76,8 @@ The system provides multiple visualization types:
    - Interactive global map showing glacier locations
    - Red markers indicating glacier positions
    - Light blue background for clear visibility
+     ![13ba7c9652538a90d9de94d4c96d14b7dcbeac2035471fa02073aaa4](https://github.com/user-attachments/assets/cbfc7e3d-4a1b-4b8e-97ae-770e5c1d3a3b)
+
 
 2. **Statistical Plots**
    - Glacier area distribution histogram
@@ -89,6 +91,7 @@ The system provides multiple visualization types:
    - Most common continent
    - Total number of glaciers
    - Total glacier area
+![b87d0dc5808d4b03885f6e2ea4727e43ea04cc9cc7207b5a2e78345e](https://github.com/user-attachments/assets/2ba17a5c-c636-44df-b0fa-3e8b1200be55)
 
 ## Data Requirements
 
