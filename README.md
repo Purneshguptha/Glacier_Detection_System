@@ -1,60 +1,74 @@
-# Glacier Retreat Analysis System
+Glacier Analysis System
+Overview
+The Glacier Analysis System is a Streamlit-based web application that provides an interactive interface for analyzing glacier data. It allows users to upload a CSV dataset containing glacier-related information and visualize key metrics, including distribution, elevation statistics, risk assessment, and more.
 
-This system analyzes and visualizes glacier retreat using time-series satellite images. It provides an interactive interface to upload and analyze satellite imagery data, detect glacier boundaries, and quantify retreat over time.
+Features
+Upload and preprocess glacier data from CSV files.
 
-## Features
+Visualize glacier locations on a world map.
 
-- Interactive web interface using Streamlit
-- Automated glacier boundary detection using computer vision techniques
-- Time-series visualization of glacier retreat
-- Quantitative analysis of retreat areas
-- Statistical visualization of retreat patterns
+Perform statistical analysis of glacier areas, elevations, and distribution across continents.
 
-## Setup
+Generate density maps for high-risk glacier zones.
 
-1. Install the required dependencies:
-```bash
+Filter and explore detailed glacier data interactively.
+
+Installation
+Prerequisites
+Ensure you have Python 3.7+ installed on your system.
+
+Install Dependencies
+Run the following command to install the required packages:
+
+bash
+Copy
+Edit
 pip install -r requirements.txt
-```
+Usage
+Running the Application
+To launch the Glacier Analysis System, execute:
 
-2. Prepare your data:
-   - Create a CSV file (database.csv) with the following columns:
-     - image_path: Path to the satellite image
-     - date: Date of the image capture
+bash
+Copy
+Edit
+python -m streamlit run glacier_analysis.py
+Uploading Data
+Upload a CSV file containing glacier information.
 
-3. Run the application:
-```bash
-streamlit run glacier_analysis.py
-```
+The application will preprocess and clean the data.
 
-## Usage
+You will see an overview of key statistics.
 
-1. Launch the application using the command above
-2. Upload your database.csv file through the web interface
-3. The system will automatically:
-   - Process all satellite images
-   - Detect glacier boundaries
-   - Calculate retreat areas
-   - Generate visualizations and statistics
+Exploring Data
+Statistical Analysis: View distributions, box plots, and density maps.
 
-## Output
+Detailed Data: Filter and analyze glacier records by continent.
 
-The system provides:
-- Original satellite images with detected glacier boundaries
-- Time-series visualization of glacier retreat
-- Statistical analysis of retreat areas
-- Total retreat area calculation
+Dependencies
+The application relies on the following Python libraries:
 
-## Technical Details
+pandas - Data manipulation
 
-The system uses:
-- OpenCV for image processing and glacier boundary detection
-- Pandas for data management
-- Matplotlib and Seaborn for visualization
-- Streamlit for the interactive web interface
+numpy - Numerical computations
 
-## Notes
+matplotlib - Data visualization
 
-- Ensure your satellite images are in a supported format (JPG, PNG)
-- The system works best with clear, cloud-free satellite imagery
-- Processing time depends on the number and size of images 
+seaborn - Enhanced statistical plots
+
+streamlit - Web-based UI
+
+cartopy - Geospatial mapping
+
+opencv-python - Image processing
+
+Pillow - Image handling
+
+folium - Interactive maps
+
+streamlit-folium - Integration with Streamlit
+
+Contributing
+Contributions are welcome! Feel free to fork this repository and submit pull requests.
+
+License
+This project is licensed under the MIT License.
